@@ -7,3 +7,6 @@
 8.11.0
 
 # Instructions
+
+npm i
+npm start
