@@ -1,0 +1,13 @@
+.btn-navigation {
+  width: 50%;
+  letter-spacing: 0.1px;
+  background-color: transparent;
+  border: 1px solid var(--tertiary-hsl);
+  color: var(--primary-light-hsl);
+}
+
+.btn-navigation[disabled],
+.btn-navigation[disabled] a {
+  color: hsla(var(--primary-light) / 0.5);
+  pointer-events: none;
+}

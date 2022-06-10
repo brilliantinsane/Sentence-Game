@@ -1,0 +1,16 @@
+.welcome-title,
+.intro {
+  color: var(--primary-light-hsl);
+  text-align: center;
+}
+
+.welcome-title {
+  line-height: 1;
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+}
+
+.intro a {
+  color: var(--tertiary-hsl);
+  text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+.btn-play {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
+  min-height: 200px;
+  min-width: 200px;
+  color: var(--primary-light-hsl);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  transition: border-radius 0.5s linear;
+  background: var(--tertiary-hsl);
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-dark-hsl) 0%,
+    var(--tertiary-hsl) 100%
+  );
+  animation: playButton 2s linear infinite;
+}
+
+@keyframes playButton {
+  25% {
+    border-radius: 70% 30% 35% 70% / 60% 50% 50% 40%;
+  }
+  50% {
+    border-radius: 36% 64% 80% 20% / 26% 59% 41% 74%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}

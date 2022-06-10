@@ -1,0 +1,12 @@
+.custom-input {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid var(--tertiary-hsl);
+  color: hsla(var(--primary-light) / 0.5);
+  caret-color: currentColor;
+}
+
+.custom-input::placeholder {
+  color: currentColor;
+}

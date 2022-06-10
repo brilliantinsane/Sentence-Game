@@ -1,0 +1,35 @@
+.custom-popup {
+  position: fixed;
+  z-index: 9999;
+  overflow: hidden;
+  inset: 0;
+  background-color: hsla(var(--black) / 0.4);
+}
+
+.popup {
+  background-color: var(--primary-light-hsl);
+  border-radius: 0.3rem;
+}
+
+.popup-content {
+  padding: 2.5rem;
+}
+
+/* .popup-footer {
+  margin-top: 2rem;
+  gap: 1rem;
+} */
+
+.popup-footer > .btn-navigation,
+.popup-footer > .btn-navigation a {
+  border: 0;
+  color: var(--black);
+}
+
+.popup-footer > .btn-navigation.no {
+  background-color: hsla(var(--primary-danger) / 0.5);
+}
+
+.popup-footer > .btn-navigation.yes {
+  background-color: hsla(var(--primary-success) / 0.5);
+}

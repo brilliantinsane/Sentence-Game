@@ -1,0 +1,22 @@
+.step {
+  min-height: 50px;
+  min-width: 50px;
+  border: 1px solid hsla(var(--primary-light) / 0.5);
+  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--primary-light-hsl);
+}
+
+.step.active {
+  border-color: var(--tertiary-hsl);
+}
+
+.step.skipped {
+  background-color: var(--primary-danger-hsl);
+  border-color: var(--primary-danger-hsl);
+}
+
+.step.answered {
+  background-color: var(--primary-success-hsl);
+  border-color: var(--primary-success-hsl);
+}

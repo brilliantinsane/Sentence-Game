@@ -1,0 +1,20 @@
+.main-template {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.main-content {
+  padding: 2rem 1rem 1rem;
+  display: flex;
+  flex-flow: column;
+  flex: 0 1 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-template {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}

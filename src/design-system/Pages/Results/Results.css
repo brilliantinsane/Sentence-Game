@@ -1,0 +1,12 @@
+.results-title,
+.result {
+  color: var(--primary-light-hsl);
+}
+
+.results-title {
+  font-size: 2rem;
+}
+
+.results-title.previous {
+  margin-top: 3rem;
+}
