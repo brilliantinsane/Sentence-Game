@@ -1,0 +1,34 @@
+.instructions-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul.instructions-questions {
+  list-style-type: disc;
+  padding: 1rem 2rem;
+}
+
+.instructions-title,
+.instructions-paragraph,
+.instruction-question,
+.example-title {
+  color: var(--primary-light-hsl);
+}
+
+.instructions-paragraph,
+.instruction-question {
+  font-size: 1rem;
+}
+
+.instructions-paragraph {
+  margin: 1rem 0;
+}
+
+.results-link {
+  color: var(--tertiary-hsl);
+  text-decoration: underline;
+}
+
+.example-title {
+  font-size: 1.5rem;
+}

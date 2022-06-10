@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <h1 className="welcome-title">Welcome to the Sentence Game!</h1>
       <span className="intro">
         You can try and play right away or you can check the instructions{" "}
-        <Link to="/">here</Link> first.
+        <Link to="/instructions">here</Link> first.
       </span>
       <div className="full-height flex-column flex-center">
         <PlayButton />

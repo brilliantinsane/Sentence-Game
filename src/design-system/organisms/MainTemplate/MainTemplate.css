@@ -1,15 +1,15 @@
 .main-template {
   height: 100%;
-  display: flex;
-  flex-flow: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .main-content {
   padding: 2rem 1rem 1rem;
   display: flex;
   flex-flow: column;
-  flex: 0 1 100%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 1024px) {

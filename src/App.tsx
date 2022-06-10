@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import Home from "./design-system/Pages/Home";
+import Instructions from "./design-system/Pages/Instructions";
 import Playground from "./design-system/Pages/Playground";
 import Results from "./design-system/Pages/Results";
 import { submitResult } from "./redux/questionsSlice";
@@ -21,6 +22,7 @@ const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/instructions" element={<Instructions />} />
       <Route path="/playground" element={<Playground />} />
       <Route path="/results" element={<Results />} />
     </Routes>

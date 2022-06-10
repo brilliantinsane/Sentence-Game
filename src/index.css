@@ -32,12 +32,12 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   font-family: monospace;
   background-color: var(--primary-dark-hsl);
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 html,

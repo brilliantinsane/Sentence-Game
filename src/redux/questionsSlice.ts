@@ -43,25 +43,27 @@ const initialState: IQuestionsState = {
   results: [],
 };
 
+const setSkipped = (state: IQuestionsState) => {
+  state.questionList[state.currentQuestion].skipped =
+    state.questionList[state.currentQuestion].answer === "";
+};
+
 export const questionsSlice = createSlice({
   name: "questions",
   initialState,
   reducers: {
     nextQuestion: (state) => {
-      state.questionList[state.currentQuestion].skipped =
-        state.questionList[state.currentQuestion].answer === "";
+      setSkipped(state);
       if (state.currentQuestion >= state.questionList.length - 1) return;
       state.currentQuestion += 1;
     },
     previousQuestion: (state) => {
-      state.questionList[state.currentQuestion].skipped =
-        state.questionList[state.currentQuestion].answer === "";
+      setSkipped(state);
       if (state.currentQuestion === 0) return;
       state.currentQuestion -= 1;
     },
     jumpToQuestion: (state, action) => {
-      state.questionList[state.currentQuestion].skipped =
-        state.questionList[state.currentQuestion].answer === "";
+      setSkipped(state);
       state.currentQuestion = action.payload;
     },
     setAnswer: (
