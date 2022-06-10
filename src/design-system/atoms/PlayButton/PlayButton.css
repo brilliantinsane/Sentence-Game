@@ -6,14 +6,14 @@
   min-width: 200px;
   color: var(--primary-light-hsl);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  transition: border-radius 0.5s linear;
+  transition: border-radius 3.5s linear;
   background: var(--tertiary-hsl);
   background-image: linear-gradient(
     45deg,
     var(--secondary-dark-hsl) 0%,
     var(--tertiary-hsl) 100%
   );
-  animation: playButton 2s linear infinite;
+  animation: playButton 3.5s linear infinite;
 }
 
 @keyframes playButton {
@@ -22,6 +22,9 @@
   }
   50% {
     border-radius: 36% 64% 80% 20% / 26% 59% 41% 74%;
+  }
+  75% {
+    border-radius: 45% 55% 79% 21% / 49% 40% 60% 51%;
   }
   100% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
