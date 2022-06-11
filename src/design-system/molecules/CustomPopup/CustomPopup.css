@@ -15,21 +15,16 @@
   padding: 2.5rem;
 }
 
-/* .popup-footer {
-  margin-top: 2rem;
-  gap: 1rem;
-} */
-
 .popup-footer > .btn-navigation,
 .popup-footer > .btn-navigation a {
   border: 0;
   color: var(--black);
 }
 
-.popup-footer > .btn-navigation.no {
+.popup-footer > .btn-navigation.btn-no {
   background-color: hsla(var(--primary-danger) / 0.5);
 }
 
-.popup-footer > .btn-navigation.yes {
+.popup-footer > .btn-navigation.btn-yes {
   background-color: hsla(var(--primary-success) / 0.5);
 }

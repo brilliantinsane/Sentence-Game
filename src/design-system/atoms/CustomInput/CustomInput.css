@@ -5,6 +5,8 @@
   border-bottom: 1px solid var(--tertiary-hsl);
   color: hsla(var(--primary-light) / 0.5);
   caret-color: currentColor;
+  min-height: 1.5rem;
+  padding: 1rem 0.875rem;
 }
 
 .custom-input::placeholder {

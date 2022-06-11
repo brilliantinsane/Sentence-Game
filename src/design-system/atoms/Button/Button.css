@@ -1,4 +1,4 @@
-.btn-navigation {
+.btn-navigation:not(.btn-play) {
   width: 50%;
   letter-spacing: 0.1px;
   background-color: transparent;

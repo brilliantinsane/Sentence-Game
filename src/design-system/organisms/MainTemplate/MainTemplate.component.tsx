@@ -3,9 +3,14 @@ import Footer from "../../molecules/Footer";
 import Header from "../../molecules/Header";
 import "./MainTemplate.css";
 
+export enum FooterPage {
+  RESULTS = "results",
+  INSTRUCTIONS = "instructions",
+}
+
 export interface IFooterProps {
   handleChangeStep?: () => void;
-  resultsPage?: boolean;
+  footerPage?: string;
 }
 
 interface IMainTemplate {

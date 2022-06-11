@@ -1,17 +1,22 @@
 import React from "react";
 import { RootState, useSelector } from "../../../redux/store";
 import MainTemplate from "../../organisms/MainTemplate";
+import { FooterPage } from "../../organisms/MainTemplate/MainTemplate.component";
 import "./Results.css";
 
 const Results: React.FC = () => {
   const { results } = useSelector((state: RootState) => state.questions);
   const latestAnswer = results[results.length - 1];
-  const previousAnswers = results.filter(
-    (answer: string) => answer !== latestAnswer
-  );
+  const previousAnswers = results
+    .filter((answer: string) => answer !== latestAnswer)
+    .reverse();
   const showPreviousAnswers = previousAnswers.length >= 1;
   return (
-    <MainTemplate header footer footerProps={{ resultsPage: true }}>
+    <MainTemplate
+      header
+      footer
+      footerProps={{ footerPage: FooterPage.RESULTS }}
+    >
       {!!results.length ? (
         <>
           <h1 className="results-title">Latest result:</h1>

@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { openPopup, submitResult } from "../../../redux/questionsSlice";
 import { RootState, useSelector } from "../../../redux/store";
 import Button from "../../atoms/Button";
+import LinkButton from "../../atoms/LinkButton";
 import "./CustomPopup.css";
 
 const CustomPopup: React.FC = () => {
@@ -28,17 +28,18 @@ const CustomPopup: React.FC = () => {
         </div>
         <div className="popup-footer flex-row flex-center">
           <Button
-            className="capitalize no"
+            className="capitalize btn-no"
             onClick={() => dispatch(openPopup(false))}
           >
             No
           </Button>
-          <Button
-            className="capitalize yes btn-link"
+          <LinkButton
+            className="btn-yes"
+            to="/results"
             onClick={handleSubmitResults}
           >
-            <Link to="/results">Yes</Link>
-          </Button>
+            Yes
+          </LinkButton>
         </div>
       </div>
     </div>

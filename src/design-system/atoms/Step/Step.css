@@ -5,6 +5,7 @@
   border-radius: 50%;
   font-size: 1rem;
   color: var(--primary-light-hsl);
+  cursor: pointer;
 }
 
 .step.active {

@@ -1,7 +1,7 @@
 .btn-play {
   align-self: center;
   justify-self: center;
-  font-size: 3rem;
+  font-size: 2rem;
   min-height: 200px;
   min-width: 200px;
   color: var(--primary-light-hsl);
@@ -28,5 +28,13 @@
   }
   100% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-play {
+    font-size: 3rem;
+    min-height: 250px;
+    min-width: 250px;
   }
 }

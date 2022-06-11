@@ -1,10 +1,15 @@
 import React from "react";
 import MainTemplate from "../../organisms/MainTemplate";
+import { FooterPage } from "../../organisms/MainTemplate/MainTemplate.component";
 import "./Instructions.css";
 
 const Instructions: React.FC = () => {
   return (
-    <MainTemplate header>
+    <MainTemplate
+      header
+      footer
+      footerProps={{ footerPage: FooterPage.INSTRUCTIONS }}
+    >
       <h1 className="instructions-title">Instructions</h1>
       <div className="full-height flex-column scroll-y">
         <p className="instructions-paragraph">You will be asked 4 questions:</p>

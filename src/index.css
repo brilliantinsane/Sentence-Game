@@ -92,6 +92,9 @@ select {
   --black: 0 0% 0%;
   --black-hsl: hsl(var(--black));
 
+  --white: 0 0% 100%;
+  --white-hsl: hsl(var(--white));
+
   --primary-success: 144 65% 50%;
   --primary-success-hsl: hsl(144, 65%, 50%);
 
@@ -117,6 +120,8 @@ select {
 }
 
 .btn-link a {
+  position: relative;
+  background-color: transparent;
   color: currentColor;
   display: flex;
   justify-content: center;
@@ -124,14 +129,15 @@ select {
   align-items: center;
   height: 100%;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .scroll-y {
-  overflow-y: auto;
+  overflow-y: auto !important;
 }
 
 .no-padding {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .capitalize {
