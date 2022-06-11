@@ -1,6 +1,6 @@
 # node version
 
-16.15.1
+16.15.1 (Currently it's latest stable - LTS)
 
 # npm version
 
